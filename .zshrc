@@ -4,7 +4,8 @@
 export ZSH="/Users/thomasbreydo/.oh-my-zsh"
 
 # My custom theme
-ZSH_THEME="eastwood"
+ZSH_THEME="agnoster"
+DEFAULT_USER="thomasbreydo"
 
 plugins=(
 	git
@@ -16,6 +17,7 @@ plugins=(
 )
 
 export YSU_HARDCORE=1  # must use aliases
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=gray'
 
 source $ZSH/oh-my-zsh.sh
 
