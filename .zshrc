@@ -31,7 +31,9 @@ export PATH=$PATH:/Users/thomasbreydo/Library/Python/3.8/bin
 
 # Python packaging
 alias twu="twine upload --skip-existing"
+alias sdist_and_bdist="python3 setup.py sdist bdist_wheel"
 alias sdist="python3 setup.py sdist"
+alias bdist="python3 setup.py bdist_wheel"
 alias bv="bump2version"
 
 # Visual Studio

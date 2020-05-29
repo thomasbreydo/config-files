@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>58E353A2-4132-4938-9699-A6F3A6B9E82C</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>sd</string>
+			<key>text</key>
+			<string>Search SpanishDict for {query}</string>
+			<key>url</key>
+			<string>https://www.spanishdict.com/translate/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>8C7F8044-5688-44B4-9657-58B7A2F39BB9</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>s</string>
+			<key>text</key>
+			<string>Search Thesaurus for synonyms to '{query}'</string>
+			<key>url</key>
+			<string>https://www.thesaurus.com/browse/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
