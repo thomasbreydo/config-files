@@ -46,6 +46,7 @@ alias copy='pbcopy'
 
 # Other
 alias zshrc='code ~/.zshrc'
+alias aliasgrep='alias | grep'
 mdcd ()
 {
     mkdir -p -- "$1" && cd -P -- "$1"
