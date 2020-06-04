@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.thomasbreydo.calendarquickadd</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>68E566EC-950C-4382-8ABE-EECEDDB09369</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F9FCEB0E-DC2C-4801-870A-634BF0991456</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7BDF8F88-8114-4024-8B5C-F0B026F5AB96</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F9FCEB0E-DC2C-4801-870A-634BF0991456</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>9E30F23F-0C51-49FA-A482-100E7EC0A17C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>68E566EC-950C-4382-8ABE-EECEDDB09369</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CAF3EC85-51D9-449E-ACF7-AAFCFA8A53DB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7BDF8F88-8114-4024-8B5C-F0B026F5AB96</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Thomas Breydo</string>
+	<key>description</key>
+	<string>Open the Calendar app and quick-add an event.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Calendar Quick-Add</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+tell application "Calendar" to activate
+repeat until "Calendar" is running
+	delay 0.1
+end repeat
+tell application "Calendar" to activate
+tell application "System Events"
+    keystroke "n" using {command down}
+    keystroke "v" using {command down}
+end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>F9FCEB0E-DC2C-4801-870A-634BF0991456</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>cal</string>
+				<key>subtext</key>
+				<string>Open the Calendar app and quick-add this event.</string>
+				<key>text</key>
+				<string>Calendar Quick-Add</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>CAF3EC85-51D9-449E-ACF7-AAFCFA8A53DB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^\s*$</string>
+						<key>outputlabel</key>
+						<string>Use clipboard</string>
+						<key>uid</key>
+						<string>9E30F23F-0C51-49FA-A482-100E7EC0A17C</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Use passed</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>7BDF8F88-8114-4024-8B5C-F0B026F5AB96</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>68E566EC-950C-4382-8ABE-EECEDDB09369</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This workflow provides simple access to Calendar's quick-add feature.
+
+To use, type "cal {query}" to open Calendar and start creating the event. The {query} can use natural language processing. For example: "cal Dinner with Jack at 7pm on Friday"
+
+If the {query} is left out (just "cal" is called), Alfred will use the most recently-copied text to create the event.</string>
+	<key>uidata</key>
+	<dict>
+		<key>68E566EC-950C-4382-8ABE-EECEDDB09369</key>
+		<dict>
+			<key>xpos</key>
+			<integer>465</integer>
+			<key>ypos</key>
+			<integer>385</integer>
+		</dict>
+		<key>7BDF8F88-8114-4024-8B5C-F0B026F5AB96</key>
+		<dict>
+			<key>xpos</key>
+			<integer>310</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>CAF3EC85-51D9-449E-ACF7-AAFCFA8A53DB</key>
+		<dict>
+			<key>xpos</key>
+			<integer>140</integer>
+			<key>ypos</key>
+			<integer>250</integer>
+		</dict>
+		<key>F9FCEB0E-DC2C-4801-870A-634BF0991456</key>
+		<dict>
+			<key>xpos</key>
+			<integer>630</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.0.2</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
