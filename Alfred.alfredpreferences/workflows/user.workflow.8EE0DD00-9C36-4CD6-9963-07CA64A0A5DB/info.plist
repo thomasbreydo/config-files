@@ -76,11 +76,12 @@
 				<key>applescript</key>
 				<string>on alfred_script(q)
 tell application "Calendar" to activate
-repeat until "Calendar" is running
+repeat until application "Calendar" is running
 	delay 0.1
 end repeat
 tell application "Calendar" to activate
 tell application "System Events"
+    keystroke "0" using {command down}
     keystroke "n" using {command down}
     keystroke "v" using {command down}
 end tell
@@ -204,7 +205,7 @@ If the {query} is left out (just "cal" is called), Alfred will use the most rece
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.0.2</string>
+	<string>0.0.3</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>

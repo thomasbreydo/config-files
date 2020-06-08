@@ -51,3 +51,15 @@ mdcd ()
 {
     mkdir -p -- "$1" && cd -P -- "$1"
 }
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# IP
+ip () {
+	echo "Loc IP: $(ipconfig getifaddr en0)"
+	echo "Ext IP: $(curl -s https://ipecho.net/plain)"
+}
+
+# CTFs
+b() { 
+	ssh bandit$1@bandit.labs.overthewire.org -p 2220 ${@:2}
+}
