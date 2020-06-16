@@ -85,3 +85,4 @@ alias gcnomsg="git commit -m '' --allow-empty-message"
 b() { 
 	ssh bandit$1@bandit.labs.overthewire.org -p 2220 ${@:2}
 }
+alias ghidra='$HOME/ctftools/ghidra_9.1.2_PUBLIC/ghidraRun'
