@@ -3,7 +3,7 @@
 # Path to my oh-my-zsh installation.
 export ZSH="/Users/thomasbreydo/.oh-my-zsh"
 
-# My custom theme
+
 ZSH_THEME="agnoster"
 DEFAULT_USER="thomasbreydo"
 
@@ -17,7 +17,7 @@ plugins=(
 )
 
 export YSU_HARDCORE=1  # must use aliases
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=gray'
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=109'  # visible on Solarized
 
 source $ZSH/oh-my-zsh.sh
 
@@ -31,6 +31,8 @@ export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
+# Make bash 5.0 default bash
+export PATH="/usr/local/Cellar/bash/5.0.17/bin:$PATH"
 # For metasploit
 export PATH="/opt/metasploit-framework/bin:$PATH"
 
@@ -38,6 +40,8 @@ export PATH="/opt/metasploit-framework/bin:$PATH"
 # For GDB
 export GUILE_LOAD_PATH="/usr/local/share/guile/site/3.0"
 export GUILE_LOAD_COMPILED_PATH="/usr/local/lib/guile/3.0/site-ccache"
+# For mega-get, for example
+export PATH=/Applications/MEGAcmd.app/Contents/MacOS:$PATH
 # For convenvience
 export DOTFILES='/Users/thomasbreydo/Desktop/Programming/Other/config-files'
 
@@ -53,6 +57,7 @@ alias bv="bump2version"
 # Visual Studio
 alias c='code'
 alias ca='code -a'
+alias cn='code -n'
 
 # Clipboard
 alias paste='pbpaste'
@@ -85,4 +90,4 @@ alias gcnomsg="git commit -m '' --allow-empty-message"
 b() { 
 	ssh bandit$1@bandit.labs.overthewire.org -p 2220 ${@:2}
 }
-alias ghidra='$HOME/ctftools/ghidra_9.1.2_PUBLIC/ghidraRun'
+alias ghidra="$HOME/ctftools/ghidra_9.1.2_PUBLIC/ghidraRun"
