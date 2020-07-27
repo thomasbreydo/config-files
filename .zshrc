@@ -19,6 +19,7 @@ plugins=(
 
 export YSU_HARDCORE=1  # must use aliases
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=109'  # visible on Solarized
+export ENABLE_CORRECTION=1  # vanilla zsh autocorrection
 
 source $ZSH/oh-my-zsh.sh
 
