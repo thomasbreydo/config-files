@@ -15,7 +15,6 @@
 			end try
 		end if
 		activate
-		delay 0.5 -- make sure iTerm loads
 		tell the first window to tell current session to write text q
 	end tell
 end alfred_script</string>
