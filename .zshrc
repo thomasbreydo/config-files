@@ -9,11 +9,12 @@ DEFAULT_USER="thomasbreydo"
 
 plugins=(
 	git
-	yarn
+	# yarn
 	z
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	you-should-use
+	thefuck
 )
 
 export YSU_HARDCORE=1  # must use aliases
