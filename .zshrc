@@ -14,7 +14,7 @@ plugins=(
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	you-should-use
-	thefuck
+	# thefuck
 )
 
 export YSU_HARDCORE=1  # must use aliases
