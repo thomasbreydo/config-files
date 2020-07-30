@@ -45,7 +45,7 @@ export GUILE_LOAD_COMPILED_PATH="/usr/local/lib/guile/3.0/site-ccache"
 # For mega-get, for example
 export PATH=/Applications/MEGAcmd.app/Contents/MacOS:$PATH
 # For convenvience
-export DOTFILES='/Users/thomasbreydo/Desktop/Programming/Other/config-files'
+export CONFIGFILES='/Users/thomasbreydo/Desktop/Programming/Other/config-files'
 
 # # # # # # # # #  Aliases # # # # # # # # # 
 
