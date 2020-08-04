@@ -4,8 +4,8 @@
 export ZSH="/Users/thomasbreydo/.oh-my-zsh"
 
 
-ZSH_THEME="agnoster"
-DEFAULT_USER="thomasbreydo"
+export ZSH_THEME="agnoster"
+export DEFAULT_USER="thomasbreydo"
 
 plugins=(
 	git
