@@ -102,7 +102,7 @@ end alfred_script</string>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>cal</string>
+				<string>qa</string>
 				<key>subtext</key>
 				<string>Open the Calendar app and quick-add this event.</string>
 				<key>text</key>
