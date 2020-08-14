@@ -72,7 +72,7 @@
 	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
 	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuUTAjQGjA
 	AAAAAAAI0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiJylYTlNP
-	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0BzsZ2yLQ5W0iUmNzhe
+	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0B0oZ2yLQ5W0iUmNzhe
 	TlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIANwBJAEwAUgBUAGMA
 	aQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5AL8AxgDIANEA0gDX
 	AOIA6wD4APsBBAELAQ8BEQETARUBGQEbAR0BHwEhASMBLAExAUABRAAAAAAAAAIBAAAA
@@ -98,7 +98,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 381 620 392 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>591 306 722 459 0 0 1440 900 </string>
+	<string>3 441 722 459 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>703 441 737 459 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -993,6 +993,13 @@
 	<array>
 		<string>Menlo</string>
 	</array>
+	<key>NoSyncFrame_SessionsPreferences</key>
+	<dict>
+		<key>screenFrame</key>
+		<string>{{0, 0}, {1440, 900}}</string>
+		<key>topLeft</key>
+		<string>{417, 811}</string>
+	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
@@ -1005,7 +1012,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>F910476E-6A53-4958-9522-A75B0A310E7F</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>345</integer>
+	<integer>357</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1805,7 +1812,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-08-04T03:03:55Z</date>
+	<date>2020-08-13T21:25:50Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
