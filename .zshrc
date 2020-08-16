@@ -4,7 +4,7 @@
 export ZSH="/Users/thomasbreydo/.oh-my-zsh"
 
 
-export ZSH_THEME="agnoster"
+export ZSH_THEME="up-to-date-agnoster"
 export DEFAULT_USER="thomasbreydo"
 
 plugins=(
