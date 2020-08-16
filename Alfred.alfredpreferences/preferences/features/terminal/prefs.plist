@@ -16,6 +16,9 @@
 		end if
 		activate
 		tell the first window to tell current session to write text q
+		tell application "System Events"
+    			keystroke "k" using command down
+		end tell
 	end tell
 end alfred_script</string>
 </dict>
