@@ -23,6 +23,8 @@ export ENABLE_CORRECTION="true"  # vanilla zsh autocorrection
 
 source $ZSH/oh-my-zsh.sh
 
+# Fuzzy history finding
+source ~/.fzf.zsh
 
 ######################## USER CONFIG ########################
 
