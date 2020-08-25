@@ -43,6 +43,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>D1AC3DD2-6769-41C9-883A-BBAE272F3E75</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>gh</string>
+			<key>text</key>
+			<string>Open GitHub</string>
+			<key>url</key>
+			<string>https://github.com</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>onlyShowEnabledInPrefs</key>
 	<true/>
