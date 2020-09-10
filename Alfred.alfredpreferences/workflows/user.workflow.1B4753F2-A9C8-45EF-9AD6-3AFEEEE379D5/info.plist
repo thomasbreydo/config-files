@@ -34,6 +34,29 @@
 				<false/>
 			</dict>
 		</array>
+		<key>3A72EC5C-F23C-4E17-8A7D-E7C3BC2BD3E0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4968B805-A9F7-4B8B-92E7-74C2DB6FE6E1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>E6A792B9-37D9-4FA5-B4C5-19403AAF0B87</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>843354EB-CE26-4753-9B5D-4699FFEAA8C9</key>
 		<array>
 			<dict>
@@ -62,6 +85,29 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>22F150A2-E142-406B-A786-0666A6A73F1A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A60AAD11-A299-47B1-BCE5-D1CB85036D1C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A7EDBE8B-B258-42A2-8DA9-157C1CAEF588</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3CD16397-773C-4A09-BE69-22B4A2493CE0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -110,6 +156,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./tplink/tplink --plug --host $PLUG_IP on &amp;&amp; echo -n "success" || echo -n "fail"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A7EDBE8B-B258-42A2-8DA9-157C1CAEF588</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -131,25 +200,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>autopaste</key>
 				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./tplink/tplink --plug --host $PLUG_IP on &amp;&amp; echo -n "success" || echo -n "fail"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>A7EDBE8B-B258-42A2-8DA9-157C1CAEF588</string>
+			<string>33F8B191-F23F-4C9E-AAD2-797701616FBA</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -178,19 +243,58 @@ echo -n "$(echo $1 | pcregrep -o1 '(\d+\.\d+\.\d+\.\d+)')"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
 				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>30</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>]</string>
+				<key>leftcursor</key>
 				<false/>
-				<key>transient</key>
-				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>33F8B191-F23F-4C9E-AAD2-797701616FBA</string>
+			<string>A60AAD11-A299-47B1-BCE5-D1CB85036D1C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>Light ON</string>
+				<key>textcolor</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>3CD16397-773C-4A09-BE69-22B4A2493CE0</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -226,6 +330,64 @@ fi</string>
 			<key>config</key>
 			<dict>
 				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>Light OFF</string>
+				<key>textcolor</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>4968B805-A9F7-4B8B-92E7-74C2DB6FE6E1</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>33</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>[</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>3A72EC5C-F23C-4E17-8A7D-E7C3BC2BD3E0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
 				<integer>2</integer>
 				<key>backgroundcolor</key>
 				<string></string>
@@ -252,27 +414,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>free</string>
-				<key>subtext</key>
-				<string>Turn off the availability light</string>
-				<key>text</key>
-				<string>Free</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>1FC15A9C-0134-4C62-B9FD-DA3343356CED</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -293,6 +434,27 @@ fi</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>free</string>
+				<key>subtext</key>
+				<string>Turn off the availability light</string>
+				<key>text</key>
+				<string>Free</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>1FC15A9C-0134-4C62-B9FD-DA3343356CED</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -301,37 +463,58 @@ fi</string>
 		<key>1BF8D79F-1CB5-4940-9524-6BA81BAB2FEF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>575</integer>
+			<integer>620</integer>
 			<key>ypos</key>
-			<integer>55</integer>
+			<integer>250</integer>
 		</dict>
 		<key>1FC15A9C-0134-4C62-B9FD-DA3343356CED</key>
 		<dict>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>260</integer>
+			<integer>620</integer>
 		</dict>
 		<key>22F150A2-E142-406B-A786-0666A6A73F1A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>570</integer>
+			<integer>620</integer>
 			<key>ypos</key>
-			<integer>255</integer>
+			<integer>495</integer>
 		</dict>
 		<key>33F8B191-F23F-4C9E-AAD2-797701616FBA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>735</integer>
+			<integer>775</integer>
 			<key>ypos</key>
-			<integer>55</integer>
+			<integer>250</integer>
+		</dict>
+		<key>3A72EC5C-F23C-4E17-8A7D-E7C3BC2BD3E0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>465</integer>
+		</dict>
+		<key>3CD16397-773C-4A09-BE69-22B4A2493CE0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>210</integer>
+			<key>ypos</key>
+			<integer>305</integer>
+		</dict>
+		<key>4968B805-A9F7-4B8B-92E7-74C2DB6FE6E1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>210</integer>
+			<key>ypos</key>
+			<integer>465</integer>
 		</dict>
 		<key>843354EB-CE26-4753-9B5D-4699FFEAA8C9</key>
 		<dict>
 			<key>xpos</key>
 			<integer>30</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>90</integer>
 		</dict>
 		<key>A13835B7-22D7-4ABB-8CAF-BE86ADD726EE</key>
 		<dict>
@@ -339,27 +522,34 @@ fi</string>
 			<string>Error setting light. Try changing $PLUG_IP to &lt;IP of device found on network&gt;
 (IP address copied to clipboard.)</string>
 			<key>xpos</key>
-			<integer>400</integer>
+			<integer>420</integer>
 			<key>ypos</key>
-			<integer>175</integer>
+			<integer>365</integer>
+		</dict>
+		<key>A60AAD11-A299-47B1-BCE5-D1CB85036D1C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>305</integer>
 		</dict>
 		<key>A7EDBE8B-B258-42A2-8DA9-157C1CAEF588</key>
 		<dict>
 			<key>note</key>
 			<string>Turn on the light. Output "fail" if an error occurs, otherwise output "success."</string>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>210</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>90</integer>
 		</dict>
 		<key>E6A792B9-37D9-4FA5-B4C5-19403AAF0B87</key>
 		<dict>
 			<key>note</key>
 			<string>Turn off the light. Output "fail" if an error occurs, otherwise output "success."</string>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>210</integer>
 			<key>ypos</key>
-			<integer>260</integer>
+			<integer>620</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
