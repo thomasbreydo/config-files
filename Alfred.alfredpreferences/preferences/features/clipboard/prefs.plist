@@ -4,6 +4,8 @@
 <dict>
 	<key>fastAppend</key>
 	<true/>
+	<key>fastAppendBackToClipboard</key>
+	<true/>
 	<key>hotkey</key>
 	<dict>
 		<key>key</key>
@@ -13,5 +15,7 @@
 		<key>string</key>
 		<string>double tap</string>
 	</dict>
+	<key>persistForImages</key>
+	<integer>1</integer>
 </dict>
 </plist>
