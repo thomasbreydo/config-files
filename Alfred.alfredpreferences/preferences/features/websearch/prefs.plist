@@ -4,6 +4,19 @@
 <dict>
 	<key>customSites</key>
 	<dict>
+		<key>0AFEFD39-1341-4DF6-A0A9-1E1855E4D380</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>uns</string>
+			<key>text</key>
+			<string>Search Unsplash for '{query}'</string>
+			<key>url</key>
+			<string>https://unsplash.com/s/photos/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>4CED8669-BA52-46A3-8BC3-D6DDBF35CD52</key>
 		<dict>
 			<key>enabled</key>
