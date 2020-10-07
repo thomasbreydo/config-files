@@ -2,8 +2,6 @@
 
 # Path to my oh-my-zsh installation.
 export ZSH="/Users/thomasbreydo/.oh-my-zsh"
-
-
 export ZSH_THEME="up-to-date-agnoster"
 export DEFAULT_USER="thomasbreydo"
 
@@ -30,6 +28,7 @@ source ~/.fzf.zsh
 
 # # # # # # # # # Path # # # # # # # # # 
 export PATH="/Users/thomasbreydo/Library/Python/3.8/bin:$PATH"
+export PATH="/Users/thomasbreydo/.poetry/bin:$PATH"
 export PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
