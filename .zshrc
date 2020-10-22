@@ -90,7 +90,7 @@ ip ()
 alias gcnomsg="git commit -m '' --allow-empty-message"
 
 # gitignore.io
-function gi() { curl -sLwn https://www.toptal.com/developers/gitignore/api/$@ ;}
+function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ; }
 
 # CTFs
 alias ghidra="$HOME/ctftools/ghidra_9.1.2_PUBLIC/ghidraRun"
