@@ -18,6 +18,7 @@ plugins=(
 export YSU_HARDCORE=1  # must use aliases
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=109'  # visible on Solarized
 export ENABLE_CORRECTION="true"  # vanilla zsh autocorrection
+unsetopt RM_STAR_SILENT  # asks if "rm .../*" is what you want
 
 source $ZSH/oh-my-zsh.sh
 
