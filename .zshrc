@@ -86,8 +86,11 @@ ip ()
 	echo "Ext IP: $(curl -s https://ipecho.net/plain)"
 }
 
-# GitHub
+# Git
 alias gcnomsg="git commit -m '' --allow-empty-message"
+
+# gitignore.io
+function gi() { curl -sLwn https://www.toptal.com/developers/gitignore/api/$@ ;}
 
 # CTFs
 alias ghidra="$HOME/ctftools/ghidra_9.1.2_PUBLIC/ghidraRun"
