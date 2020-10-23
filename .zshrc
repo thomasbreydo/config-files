@@ -51,6 +51,10 @@ export CONFIGFILES='/Users/thomasbreydo/Desktop/Programming/Other/config-files'
 
 # # # # # # # # #  Aliases # # # # # # # # # 
 
+
+# Poetry
+alias poetry_shell='. "$(dirname $(poetry run which python))/activate"'
+
 # Python packaging
 alias twu="twine upload --skip-existing"
 alias sdist_and_bdist="python3 setup.py sdist bdist_wheel"
