@@ -7,7 +7,7 @@ export DEFAULT_USER="thomasbreydo"
 
 plugins=(
 	git
-	# yarn
+	yarn
 	z
 	zsh-autosuggestions
 	zsh-syntax-highlighting
