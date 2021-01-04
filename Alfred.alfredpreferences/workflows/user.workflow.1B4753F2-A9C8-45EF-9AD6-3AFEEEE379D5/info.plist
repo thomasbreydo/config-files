@@ -8,19 +8,6 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>1BF8D79F-1CB5-4940-9524-6BA81BAB2FEF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>33F8B191-F23F-4C9E-AAD2-797701616FBA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>1FC15A9C-0134-4C62-B9FD-DA3343356CED</key>
 		<array>
 			<dict>
@@ -74,7 +61,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1BF8D79F-1CB5-4940-9524-6BA81BAB2FEF</string>
+				<string>33F8B191-F23F-4C9E-AAD2-797701616FBA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -161,7 +148,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./tplink/tplink --plug --host $PLUG_IP on &amp;&amp; echo -n "success" || echo -n "fail"</string>
+				<string>./kasa on --ip $PLUG_IP &amp;&amp; echo -n "success" || echo -n "fail"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -203,7 +190,7 @@
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
-				<string>{query}</string>
+				<string>HS103.lan</string>
 				<key>ignoredynamicplaceholders</key>
 				<false/>
 				<key>transient</key>
@@ -215,30 +202,6 @@
 			<string>33F8B191-F23F-4C9E-AAD2-797701616FBA</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>PATH="/usr/local/bin:$PATH"  # pcregrep
-echo -n "$(echo $1 | pcregrep -o1 '(\d+\.\d+\.\d+\.\d+)')"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1BF8D79F-1CB5-4940-9524-6BA81BAB2FEF</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -306,11 +269,9 @@ echo -n "$(echo $1 | pcregrep -o1 '(\d+\.\d+\.\d+\.\d+)')"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>PATH="/usr/local/bin:$PATH"  # for pcregrep
-if [ $1 = "fail" ] ; then
-	echo -n "Error setting light. Try changing the workflow environment variable called ";
-	echo "PLUG_IP to $(./tplink/tplink | pcregrep -o1 'Host: (\d+\.\d+\.\d+\.\d+)')";
-	echo -n "(IP address copied to clipboard.)";
+				<string>if [ $1 = "fail" ] ; then
+	echo "Error setting light.";
+	echo "Try setting PLUG_IP to 'HS103.lan' (copied) or 'HS103.local'";
 fi</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -419,7 +380,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./tplink/tplink --plug --host $PLUG_IP off &amp;&amp; echo -n "success" || echo -n "fail"</string>
+				<string>./kasa off --ip $PLUG_IP &amp;&amp; echo -n "success" || echo -n "fail"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -460,13 +421,6 @@ fi</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>1BF8D79F-1CB5-4940-9524-6BA81BAB2FEF</key>
-		<dict>
-			<key>xpos</key>
-			<integer>620</integer>
-			<key>ypos</key>
-			<integer>250</integer>
-		</dict>
 		<key>1FC15A9C-0134-4C62-B9FD-DA3343356CED</key>
 		<dict>
 			<key>xpos</key>
@@ -484,9 +438,9 @@ fi</string>
 		<key>33F8B191-F23F-4C9E-AAD2-797701616FBA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>775</integer>
+			<integer>620</integer>
 			<key>ypos</key>
-			<integer>250</integer>
+			<integer>260</integer>
 		</dict>
 		<key>3A72EC5C-F23C-4E17-8A7D-E7C3BC2BD3E0</key>
 		<dict>
@@ -555,12 +509,8 @@ fi</string>
 	<key>variables</key>
 	<dict>
 		<key>PLUG_IP</key>
-		<string>192.168.1.19</string>
+		<string>HS103.lan</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array>
-		<string>PLUG_IP</string>
-	</array>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>
